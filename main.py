@@ -176,5 +176,6 @@ def print_grouped_data_by_update_date(db_name, collection_name):
         if 'client' in locals() and client:
             client.close()
 
-# print_grouped_data_by_update_date("burcu_ozturk", "news")
-# print(fetch_and_store_data_to_mongodb('https://turkishnetworktimes.com/kategori/gundem/', 5,'burcu_ozturk'))
+
+print(fetch_and_store_data_to_mongodb('https://turkishnetworktimes.com/kategori/gundem/', 50, 'burcu_ozturk'))
+#print_grouped_data_by_update_date("burcu_ozturk", "news")
